@@ -10,7 +10,3 @@ db = SQLAlchemy(app)
 @app.route('/index')
 def show_index():
         return render_template('hello.html')
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
