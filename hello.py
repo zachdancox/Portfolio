@@ -4,10 +4,9 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 
-@app.route('/')
-@app.route('/index')
+@app.route("/")
 def show_index():
-        return render_template('index.html')
+        return render_template("index.html")
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
